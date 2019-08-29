@@ -3,6 +3,7 @@ package com.myawesomeproject;
 import android.app.Application;
 import android.util.Log;
 
+
 import com.facebook.react.PackageList;
 import com.facebook.hermes.reactexecutor.HermesExecutorFactory;
 import com.facebook.react.bridge.JavaScriptExecutorFactory;
@@ -45,5 +46,14 @@ public class MainApplication extends Application implements ReactApplication {
   public void onCreate() {
     super.onCreate();
     SoLoader.init(this, /* native exopackage */ false);
+  }
+
+  @Override
+  protected List<ReactPackage> getPackages() {
+      return Arrays.<ReactPackage>asList(
+          new MainReactPackage(),
+          // ...
+          new RNI18nPackage(), // <-- Add it to the packages list
+      );
   }
 }

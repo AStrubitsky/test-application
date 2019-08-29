@@ -1,0 +1,19 @@
+{
+  "appName": "Blitz Reading",
+  "navigation": {
+    "home": "Home",
+    "highScores": "High Scores",
+    "settings": "Settings"
+  },
+  "library": {
+    "emailLabel": "Enter Your Email",
+    "emailPlaceholder": "Email",
+    "hello": "Hello",
+    "logout": "Logout",
+    "login": "Login",
+    "loginTitle": "Login Page",
+    "myApplication": "My Application",
+    "passwordLabel": "Enter Your Password",
+    "passwordPlaceholder": "Password"
+  }
+}
