@@ -29,20 +29,14 @@ const loginInitialValues: ILoginValues = {
 };
 
 export default class Login extends React.Component<IProps> {
-  private handleFormSubmit = (values: ILoginValues): void => {
+  private handleFormSubmit = (values: ILoginValues): void => { 
     const {onSubmit} = this.props;
-
+   
     onSubmit(values);
+    this.props.navigation.navigate("Posts")
   };
 
-  private render(): JSX.Element {
-    const {
-      loginInfo,
-      navigation: {navigate},
-    } = this.props;
-    if (loginInfo) {
-      navigate('Home');
-    }
+   render(): JSX.Element {
     return (
       <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
         <StyledComponents.pageTitle>
