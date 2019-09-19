@@ -91,12 +91,12 @@ export default class Posts extends React.Component<IProps> {
                       />
                       <Text style = {{ marginTop : 10}}>{post.email}</Text>
                     </View>
-                    <View style = {{flex : 4,margin : 5,   flexDirection :"column"}}>
+                    <View style = {{flex : 4,margin : 5,   flexDirection :"column", justifyContent : "space-between"}}>
                       <Text >{post.postText}</Text>
                       <View style = {{ flexDirection: "row"  }}>
-                        <Text style = {{flex : 4, textAlign : "center",alignSelf : "center" }}>{post.postTime.getHours()}:{post.postTime.getMinutes()}:{post.postTime.getSeconds()}</Text>
+                        <Text style = {{flex : 4, textAlign : "center",alignSelf : "flex-end" }}>{post.postTime.getHours()}:{post.postTime.getMinutes()}:{post.postTime.getSeconds()}</Text>
                         <CheckBox
-                          containerStyle = {{flex : 1, margin : 0,alignSelf : "center"}}
+                          containerStyle = {{flex : 1,padding : 0,margin : 0, alignSelf : "flex-end" , }}
                           checkedIcon={<Icon name = "favorite-border" reverseColor = "red" color = "red"/>}
                           uncheckedIcon={<Icon name = "favorite" reverseColor = "red" color = "red"/>}
                           checked={post.isLiked}
