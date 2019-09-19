@@ -14,6 +14,7 @@
     "loginTitle": "Login Page",
     "myApplication": "My Application",
     "passwordLabel": "Enter Your Password",
-    "passwordPlaceholder": "Password"
+    "passwordPlaceholder": "Password",
+    "postPlaceholder" : "Write a new post"
   }
 }
